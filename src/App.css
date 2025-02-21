@@ -1,0 +1,16 @@
+/* .book {
+    background: url("./resturant1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  } */
+body{
+  font-family:'poppins', sans-serif;
+}
+.link{
+  font-family: 'Pacifico', cursive; 
+}
+.touch{
+  font-family: 'Pacifico', cursive; 
+}

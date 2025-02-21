@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.book {
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('./vecteez.jpg');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center;
+    height: 100vh;
+  }
+  .bill{
+    box-shadow: 5px 5px 15px rgba(46, 46, 46, 0.5);
+  }
+ 
