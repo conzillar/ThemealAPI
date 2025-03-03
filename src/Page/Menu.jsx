@@ -22,19 +22,19 @@ export default function Menu() {
 
   return (
     <>
-      <section className='px-[50px] py-[20px]  pt-[5rem] '>
-        <div className='flex items-center justify-between px-[50px]'>
-          <div className='text-[40px] mb-[2rem] flex text-center justify-between'>
+      <section className='md:px-[50px] py-[20px]  pt-[5rem] '>
+        <div className='px-[30px] mb-[1rem] md:flex items-center md:justify-between md:px-[50px]'>
+          <div className=' text-[30px] md:text-[40px] md:mb-[2rem] flex text-center justify-between'>
             <h1 className='text-[#967f7f]'>Our Menu</h1>
           </div>
           <div className='flex items-center'>
-            <input type="text" onChange={(e) => setSearchTerm(e.target.value)} name="" id="" placeholder='Search...' className='outline-none border-1 px-[5px] py-[2px] rounded-[5px]' />
-            <div className='py-[8px] px-[10px] bg-[orange] rounded-[5px] text-white'>
+            <input type="text" onChange={(e) => setSearchTerm(e.target.value)} name="" id="" placeholder='Search...' className='w-[80%] outline-none border-1 px-[4px] md:px-[5px] md:py-[2px] rounded-[5px]' />
+            <div className='px-[10px] py-[7px] md:py-[8px] md:px-[10px] bg-[orange] rounded-[5px] text-white'>
               <IoSearch className='' />
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-4 gap-[20px]'>
+        <div className='px-[30px] md:grid md:grid-cols-4 gap-[20px]'>
           {
             meals.filter(meal=>{
               if(searchTerm==="") return meal
@@ -42,8 +42,8 @@ export default function Menu() {
             })
             .map((meal, index) => (
 
-              <div className='w-full rounded-[10px] '>
-                <img src={meal.strMealThumb} alt="" className='w-[100%] rounded-[6px] border-2 border-white shadow-lg bill' />
+              <div className='mb-[2rem] md:w-full rounded-[10px] '>
+                <img src={meal.strMealThumb} alt="" className='md:w-[100%] rounded-[6px] border-2 border-white shadow-lg bill' />
                 <div className='px-[10px] py-[10px] border-1-black text-[#967f7f] flex flex-col'>
                   <div className='flex justify-between'>
                     <h1 className='text-[#8f4f35] text-[17px] font-[600]'>{meal.strMeal}</h1>
